@@ -56,7 +56,6 @@ const FileUpload = (props: Props) => {
     try {
       setUploading(true);
       const res = await startUpload(files);
-      console.log(res?.[0].url);
       if (res) {
         const data = {
           file_key: res[0].key,
@@ -66,8 +65,7 @@ const FileUpload = (props: Props) => {
 
         mutate(data, {
           onSuccess: ({chat_id}) => {
-            // toast.success(data.message)
-            console.log(chat_id);
+            toast.success("Chat created!");
             router.push(`/chat/${chat_id}`);
           },
           onError: (err) => {

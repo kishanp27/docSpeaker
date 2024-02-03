@@ -18,8 +18,6 @@ export async function getMatchesFromEmbeddings(
       
     });
 
-    console.log(queryResult);
-
     return queryResult.matches || [];
   } catch (error) {
     console.log("error querying embeddings:", error);
