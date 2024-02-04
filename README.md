@@ -26,7 +26,7 @@ Built with the Next.js 14 App Router, TypeScript, DrizzleORM & Tailwind
 To get started with this project, run
 
 ```bash
-  git clone https://github.com/joschan21/quill.git
+  git clone https://github.com/kishanp27/docSpeaker.git
 ```
 
 and copy the .env.example variables into a separate .env file, fill them out & and that's all you need to get started!
